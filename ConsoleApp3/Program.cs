@@ -40,19 +40,19 @@
 
             bebida_n1.Descuento(20);
             bebida_n2.Descuento(10);
-            bebida_n3.Descuento(50);
+            bebida_n3.Descuento(0);
 
             Console.WriteLine("Preparando....");
             Console.WriteLine("\n" + bebida_n1.preparar());
             Console.WriteLine("\n"+bebida_n2.preparar());
-            Console.WriteLine("\n"+bebida_n2.preparar());
+            Console.WriteLine("\n"+bebida_n3.preparar());
             
 
 
             Console.WriteLine("\n Descripcion del pedido....");
             Console.WriteLine("\n" + bebida_n1.Descripcion());
             Console.WriteLine("\n" + bebida_n2.Descripcion());
-            Console.WriteLine("\n" + bebida_n2.Descripcion());
+            Console.WriteLine("\n" + bebida_n3.Descripcion());
             
 
         }
