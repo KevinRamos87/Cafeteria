@@ -24,10 +24,18 @@ namespace ConsoleApp3
             return ( "Preparando un  " + nombre + " de  tamaño " + tamano); 
         }
 
-        public void Descuento(float prociento)
+        public void Descuento(float porcentaje)
         {
-            float descu = precio * (prociento / 100);
-            precio = precio - descu;
+            if (porcentaje > 0 && porcentaje <= 100)
+            {
+                float descu = precio * (porcentaje / 100);
+
+                precio = precio - descu;
+            }
+            else
+            {
+                Console.WriteLine("Porcentaje inválido");
+            }
         }
 
         public string Descripcion()
